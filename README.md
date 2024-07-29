@@ -7,9 +7,10 @@
 - channel
 - sort
 
-# Installation
+# 安装
 
-安装方式 <br/>
+```
 go get -u github.com/i-cooltea/go-hammer
+```
 
 

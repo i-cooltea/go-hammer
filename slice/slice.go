@@ -56,6 +56,8 @@ func Union[T comparable](arr1 []T, arr2 []T) (arr []T) {
 	return nil
 }
 
+// RandomOne
+// 随机获取一个元素
 func RandomOne[T any](arr []T) T {
 	var t T
 	if len(arr) > 0 {
@@ -63,4 +65,15 @@ func RandomOne[T any](arr []T) T {
 		t = arr[idx]
 	}
 	return t
+}
+
+// Contain
+// 判断是否包含元素
+func Contain[T comparable](arr []T, target T) bool {
+	for _, item := range arr {
+		if item == target {
+			return true
+		}
+	}
+	return false
 }
